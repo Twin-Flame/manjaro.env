@@ -1,0 +1,17 @@
+---
+
+- debug:
+    msg: hello
+
+- name: update cache - pacman -Sy
+  pacman:
+    update_cache: yes
+  become: true
+
+- name: Install
+  pacman:
+    name:
+      - chromium
+      - htop
+    state: present
+  become: true

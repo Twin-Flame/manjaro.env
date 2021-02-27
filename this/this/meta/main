@@ -1,0 +1,4 @@
+---
+# Start installing all roles One by one! Using conditions in roles, set by template/vars
+dependencies:
+- role: arch
